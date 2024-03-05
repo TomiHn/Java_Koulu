@@ -1,6 +1,10 @@
 package com.example;
 
-public class CalcClass {
+/**
+ * Teht3
+ */
+public class Teht3 {
+
     public double circleArea(double radius) {
         return Math.PI * Math.pow(radius, 2);
     }
@@ -12,4 +16,5 @@ public class CalcClass {
     public double triangleArea(double b, double height) {
         return (height * b) / 2;
     }
+
 }
