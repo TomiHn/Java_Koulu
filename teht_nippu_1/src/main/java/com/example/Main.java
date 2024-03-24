@@ -5,7 +5,6 @@ import java.util.Arrays;;
 public class Main {
 
     public static void main(String[] args) {
-
         Teht1 teht1 = new Teht1();
         Teht2 teht2 = new Teht2();
         Teht3 teht3 = new Teht3();
@@ -19,14 +18,17 @@ public class Main {
 
         // Tehtävä 1
         System.out.println(teht1.distCalcl(0, 0, 0, 3));
+        System.out.println();
 
         // Tehtävä 2
         teht2.treeFunc(5);
+        System.out.println();
 
         // Tehtävä 3
         System.out.println(teht3.circleArea(4));
         System.out.println(teht3.triangleArea(3, 5));
         System.out.println(teht3.squareArea(8));
+        System.out.println();
 
         // Tehtävä 4
         int[][] matrix = {
@@ -35,24 +37,30 @@ public class Main {
                 { 0, 1, 1 }
         };
         System.out.println("Koordinaatit: " + Arrays.toString(teht4.findMax(matrix)));
+        System.out.println();
 
         // Tehtävä 5
         int[] arr = new int[] { 8, 3, 2, 7 };
         int[] arrSort = teht5.sortAlg(arr);
 
         System.out.println(Arrays.toString(arrSort));
+        System.out.println();
 
         // Tehtävä 6
         System.out.println(teht6.validPalindrome("Aivot avaavat ovia"));
+        System.out.println();
 
         // Tehtävä 7
         System.out.println(teht7.fibonacci(4));
+        System.out.println();
 
         // Tehtävä 8
         System.out.println(teht8.findPrimes(10));
+        System.out.println();
 
         // Tehtävä 9
         System.out.println(teht9.timeConver(3661));
+        System.out.println();
 
         // Tehtävä 10
         System.out.println(teht10.randNums());
