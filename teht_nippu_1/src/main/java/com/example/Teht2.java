@@ -1,7 +1,7 @@
 package com.example;
 
 public class Teht2 {
-    public static void treeFunc(int height) {
+    public void treeFunc(int height) {
         int realHeight = height * 2;
         // String whiteSpace = "";
         int space = realHeight / 2;

@@ -1,10 +1,7 @@
 package com.example;
 
-/**
- * Teht5
- */
 public class Teht5 {
-    public static int[] sortAlg(int[] arr) {
+    public int[] sortAlg(int[] arr) {
         int[] arrReturn = arr.clone();
         int i, j, temp;
         boolean swapped;

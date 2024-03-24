@@ -1,7 +1,7 @@
 package com.example;
 
 public class Teht4 {
-    public static int[] findMax(int[][] array) {
+    public int[] findMax(int[][] array) {
         int max = array[0][0];
         int[] maxValues = new int[2];
         for (int i = 0; i < array.length; i++) {
