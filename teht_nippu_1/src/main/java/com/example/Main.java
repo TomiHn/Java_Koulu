@@ -47,7 +47,7 @@ public class Main {
         System.out.println();
 
         // Tehtävä 6
-        System.out.println(teht6.validPalindrome("Aivot avaavat ovia"));
+        System.out.println(teht6.validPalindrome("Aivot avaavat ovia!"));
         System.out.println();
 
         // Tehtävä 7

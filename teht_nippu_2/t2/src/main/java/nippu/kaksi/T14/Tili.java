@@ -2,25 +2,25 @@ package nippu.kaksi.T14;
 
 public class Tili {
 
-    final private int accNum;
-    private int balance;
-    private String userName;
+    final protected int accNum;
+    protected int balance;
+    protected String userName;
 
-    Tili(int account, int balance, String name) {
+    public Tili(int account, int balance, String name) {
         this.accNum = account;
         this.balance = balance;
         this.userName = name;
     }
 
-    void addBalance(int amount) {
+    public void addBalance(int amount) {
         this.balance += amount;
     }
 
-    void drawFromBalance(int amount) {
+    public void drawFromBalance(int amount) {
         this.balance -= amount;
     }
 
-    long showBalance() {
+    public long showBalance() {
         return this.balance;
     }
 
