@@ -86,7 +86,7 @@ public class Main {
 
         // Tehtävä 17
         // System.out.println(t17.reverseString("Hello"));
-        String s = t17.reverseString("aabbccdd");
+        String s = t17.reverseString("Hello World");
         System.out.println(s);
 
     }

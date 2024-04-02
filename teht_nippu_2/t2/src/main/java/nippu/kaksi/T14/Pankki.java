@@ -12,9 +12,10 @@ public class Pankki {
     }
 
     public void deleteAccount(int account) {
-        for (Tili tili : accounts) {
-            if (account == tili.accNum) {
-                accounts.remove(tili);
+        for (int i = 0; i < accounts.size(); i++) {
+            if (accounts.get(i).accNum == account) {
+                accounts.remove(i);
+                return;
             }
         }
     }
