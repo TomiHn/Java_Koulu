@@ -1,6 +1,8 @@
 package nippu.kaksi;
 
 import nippu.kaksi.T14.*;
+import nippu.kaksi.T18.*;
+import nippu.kaksi.T20.*;
 
 public class Main {
 
@@ -45,9 +47,6 @@ public class Main {
         T13 t13 = new T13();
         T16 t16 = new T16();
         T17 t17 = new T17();
-        // T18 t18 = new T18();
-        // T19 t19 = new T19();
-        // T20 t20 = new T20();
 
         // Tehtävä 11
         System.out.println(t11.sumCalc(new int[] { 9, 8, 32, -2, 1 }));
@@ -81,13 +80,58 @@ public class Main {
         System.out.println("------------");
 
         // Tehtävä 16
-        System.out.println(t16.findMissingNum(new int[] { 1, 2, 3, 4, 6, 7, 8 }));
+        System.out.println(t16.findMissingNum(new int[] { 1, 2, 3, 5, 6, 7, 8 }));
         System.out.println("------------");
 
         // Tehtävä 17
-        // System.out.println(t17.reverseString("Hello"));
         String s = t17.reverseString("Hello World");
-        System.out.println(s);
+        System.out.println(s + "\n" + "-------------");
+
+        // Tehtävä 18
+        TextFile textfile = new TextFile("/example/path/TEXT");
+        SoundFile audiofile = new SoundFile("/example/path/AUDIO");
+
+        textfile.Open();
+        audiofile.Open();
+
+        System.out.println("###POLUT###");
+        System.out.println(textfile.getFilePath());
+        System.out.println(audiofile.getFilePath());
+
+        System.out.println("###TYYPIT###");
+        System.out.println(textfile.getFileType());
+        System.out.println(audiofile.getFileType() + "\n" + "###");
+
+        textfile.Close();
+        audiofile.Close();
+        System.out.println("------------");
+
+        // Tehtävä 19
+        T19<Integer> t19 = new T19<>(5);
+        System.out.println("Onko tyhjä: " + t19.isEmpty());
+
+        // Tyhjästä poistaminen
+        try {
+            t19.pop();
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+
+        t19.push(1);
+        t19.push(3);
+        t19.push(4);
+        System.out.println("Onko tyhjä: " + t19.isEmpty());
+        t19.pop();
+
+        System.out.println(t19.size());
+        System.out.println("------------");
+
+        // Tehtävä 20
+        Thread task1 = new Thread(new Task1());
+        Thread task2 = new Thread(new Task2());
+
+        task1.start();
+        task2.start();
 
     }
 }
